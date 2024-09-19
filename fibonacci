@@ -1,0 +1,22 @@
+
+//  fibonnaci sequence is the net number in sequence is the sum of the previous two numbers
+//  [1,2,3,5,8,13,21]
+
+var climbStairs = function(n) {
+    let step = [];
+    step[1] = 1;
+    step[2] = 2
+    
+    for (let i =3; i <= n; i++) {
+        
+//         step index = step index minus one index back + step index minus two indeces back
+        step[i] = step[i - 1] + step[i - 2];
+//         ex. step[4] = step[i - 1](3) + step[i -2](2)
+        // step[4] = 5
+        // step[5] = step[i -1(5)] + step[i -2(3)] =8
+        // we are trying to get the answer for i
+    }
+    return step[n]
+}
+
+console.log(climbStairs(4))
