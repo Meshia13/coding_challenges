@@ -50,4 +50,4 @@ var climbStairs = function(n) {
     return step[n]
 }
 
-console.log(climbStairs(4))
+console.log(climbStairs(3))
